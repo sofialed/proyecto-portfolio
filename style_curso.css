@@ -1,0 +1,663 @@
+/* ===========================================
+   1. RESET BÁSICO
+   =========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #191716;
+    background-color: #ffffff;
+}
+
+/* ===========================================
+     2. TIPOGRAFÍA GENERAL
+     =========================================== */
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    color: #333333;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 48px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-top: 32px;
+}
+
+h4 {
+    font-size: 18px;
+    margin-top: 24px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+strong {
+    font-weight: bold;
+    color: #333333;
+}
+
+/* ===========================================
+     3. ENLACES
+     =========================================== */
+a {
+    color: #9091CB;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F778B1;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #9091CB;
+}
+
+/* ===========================================
+     4. LISTAS
+     =========================================== */
+ul {
+    list-style: none;
+}
+
+/* ===========================================
+    5. HEADER
+     =========================================== */
+.header {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 24px 0;
+    display: grid;
+    grid-template-areas: 
+    "header_container"
+    "header_brand"
+    "nav";
+    gap: 24px;
+}
+
+.header_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header_brand {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.header_name {
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.header_tagline {
+    color: #333333;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* ===========================================
+     6. NAVEGACIÓN
+     =========================================== */
+.nav {
+    text-align: center;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: right;
+}
+
+.nav_item {
+    display: flex;
+    background: linear-gradient(135deg, #9091cb, #f778b1);
+    padding: 7px;
+    margin: 3px;
+    border-radius: 10px;
+    display: flex;
+    min-height: 25px;
+}
+
+.nav_link {
+    display: flex;
+    color: #f0f0f0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.nav_link:hover {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.nav_link-active {
+    color: #f0f0f0;
+    font-weight: bold;
+}
+
+/* ===========================================
+     7. MAIN CONTENT
+     =========================================== */
+.main {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* ===========================================
+     8. HERO SECTION
+     =========================================== */
+.hero {
+    padding: 64px 0;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 48px;
+}
+
+.hero_container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero_title {
+    font-size: 48px;
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+.hero_subtitle {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.hero_description {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 32px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero_actions {
+    margin-bottom: 48px;
+}
+
+.hero_stats {
+    text-align: center;
+}
+
+.stat {
+    display: inline-block;
+    margin: 0 32px;
+    text-align: center;
+}
+
+.stat_number {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+.stat_label {
+    font-size: 14px;
+    color: #333333;
+}
+
+/* ===========================================
+     9. BOTONES
+     =========================================== */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    border: 2px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button-primary {
+    background-color: #9091CB;
+    color: #ffffff;
+    border-color: #9091CB;
+}
+
+.button-primary:hover {
+    background-color: #F778B1;
+    border-color: #F778B1;
+    text-decoration: none;
+}
+
+.button-secondary {
+    background-color: #ffffff;
+    color: #9091CB;
+    border-color: #9091CB;
+}
+
+.button-secondary:hover {
+    background-color: #F778B1;
+    text-decoration: none;
+}
+
+.button-large {
+    padding: 16px 32px;
+    font-size: 18px;
+}
+
+/* ===========================================
+     10. ABOUT SECTION
+     =========================================== */
+.about {
+    padding: 48px 0;
+}
+
+.about_container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about_title {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 32px;
+}
+
+.about_intro {
+    font-size: 20px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 24px;
+}
+
+.about_text {
+    color: #333333;
+    margin-bottom: 32px;
+}
+
+/* ===========================================
+     11. QUOTE
+     =========================================== */
+.quote {
+    background-color: #f8f9fa;
+    padding: 24px;
+    margin: 32px 0;
+    border-left: 4px solid #9091CB;
+}
+
+.quote_text {
+    font-size: 18px;
+    font-style: italic;
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+.quote_author {
+    color: #F778B1;
+    font-size: 14px;
+    display: block;
+    text-align: right;
+}
+
+/* ===========================================
+     12. VALUES
+     =========================================== */
+.values {
+    margin-top: 48px;
+}
+
+.values_title {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.values_list {
+    padding: 0;
+}
+
+.values_item {
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #ffffff;
+    border: 1px solid #fffdfd;
+}
+
+.values_item:hover {
+    background-color: #fefefe;
+    border-color: #9091CB;
+}
+
+.values_icon {
+    font-size: 24px;
+    margin-right: 12px;
+}
+
+.values_item strong {
+    margin-right: 8px;
+}
+
+.values_item span {
+    color: #666666;
+}
+
+/* ===========================================
+     13. PROJECTS SECTION
+     =========================================== */
+.projects {
+    padding: 64px 0;
+    background-color: #ffffff;
+}
+
+.projects_container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects_title {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.projects_description {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 48px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projects_grid {
+    padding: 0 20px;
+}
+
+/* ===========================================
+     14. PROJECT CARD
+     =========================================== */
+.project {
+    background-color: #ffffff;
+    padding: 32px;
+    margin-bottom: 32px;
+    border: 1px solid #ffffff;
+}
+
+.project:hover {
+    border-color: #F778B1;
+}
+
+.project-featured {
+    border: 2px solid #9091CB;
+    position: relative;
+}
+
+.project_badge {
+    background-color: #9091CB;
+    color: #ffffff;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.project_title {
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+.project_description {
+    color: #333333;
+    margin-bottom: 24px;
+}
+
+.project_subtitle {
+    font-size: 16px;
+    color: #333333;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.project_learnings {
+    list-style: disc;
+    padding-left: 24px;
+    margin-bottom: 24px;
+}
+
+.project_learnings li {
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.project_technologies {
+    margin-bottom: 24px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #fcfcfc;
+    color: #9091CB;
+    padding: 4px 12px;
+    margin-right: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.project_links {
+    text-align: left;
+}
+
+.project_link {
+    display: inline-block;
+    margin-right: 16px;
+    font-weight: 600;
+}
+
+/* ===========================================
+     15. SKILLS SECTION
+     =========================================== */
+.skills {
+    padding: 64px 0;
+}
+
+.skills_container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills_title {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.skills_subtitle {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 32px;
+}
+
+.skills_list {
+    margin-bottom: 48px;
+}
+
+.skill {
+    margin-bottom: 32px;
+}
+
+.skill_name {
+    margin-bottom: 8px;
+    color: #333333;
+}
+
+.skill_bar {
+    background-color: #ffffff;
+    height: 24px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.skill_progress {
+    background-color: #9091CB;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.skill_progress-html {
+    width: 75%;
+}
+
+.skill_progress-css {
+    width: 60%;
+}
+
+.skill_progress-js {
+    width: 20%;
+}
+
+.skill_percentage {
+    color: #333333;
+    font-size: 14px;
+}
+
+/* ===========================================
+     16. LEARNING
+     =========================================== */
+.learning {
+    background-color: #ffffff;
+    padding: 24px;
+}
+
+.learning_title {
+    margin-bottom: 16px;
+    color: #333333;
+}
+
+.learning_list {
+    list-style: disc;
+    padding-left: 24px;
+}
+
+.learning_item {
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+/* ===========================================
+     17. CONTACT SECTION
+     =========================================== */
+.contact {
+    padding: 64px 0;
+    background-color: #ffffff;
+}
+
+.contact_container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact_title {
+    margin-bottom: 16px;
+}
+
+.contact_description {
+    color: #333333;
+    margin-bottom: 48px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact_methods {
+    margin-bottom: 48px;
+}
+
+.contact_method {
+    display: inline-block;
+    margin: 0 32px 32px;
+    text-align: center;
+}
+
+.contact_method-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #333333;
+}
+
+.contact_link {
+    color: #9091CB;
+    font-weight: 600;
+}
+
+/* ===========================================
+     18. FOOTER
+     =========================================== */
+.footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 48px 0;
+    text-align: center;
+}
+
+.footer_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer_nav {
+    margin-bottom: 24px;
+}
+
+.footer_link {
+    color: #ffffff;
+    margin: 0 16px;
+    display: inline-block;
+}
+
+.footer_link:hover {
+    color: #F778B1;
+    text-decoration: none;
+}
+
+.footer_copyright {
+    color: #9091CB;
+    margin-bottom: 8px;
+}
+
+.footer_credits {
+    color: #9091CB;
+    font-size: 14px;
+}

@@ -1,0 +1,90 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F299EC;
+}
+
+.hero_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 25px 30px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+h2 {
+    font-family: "Montserrat", Arial, sans-serif;
+    color: #0a100d;
+    font-size: 3.2rem;
+    margin-bottom: 16px;
+}
+
+h2.hero_title {
+    text-align: center;
+}
+
+.hero_subtitle {
+    font-family: "Montserrat", Arial, sans-serif;
+    color: #343836;
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.hero_actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-proyects {
+    display: flex;
+    padding: 14px 30px;
+    border: 2px solid #0a100d;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #FF8118;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-proyects:hover {
+    background: #d64835;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero_image img {
+    width: 100%;
+    height: 500px;
+    border: none;
+    background: transparent;
+}
+
+/* 9. WAVE DIVIDER */
+
+.about {
+    background-color: #F7CB46;
+    padding: 30px 30px;
+}
+
+.wave-divider {
+    display: block;
+    width: 100%;
+    height: 120px;
+    margin: -1px 0;
+}
+
+.wave-divider__bottom {
+    fill: #F7CB46;;
+}
+
+.wave-divider__top {
+    fill: #F299EC;
+}

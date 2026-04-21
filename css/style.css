@@ -1,0 +1,64 @@
+/* 
+Archivo de estilos propio
+Fondo: #F9F9F7
+p: #6D6875
+titles: #0a100d
+ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 1. BODY GENERAL */
+
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 1rem;
+    color: #6D6875;
+    line-height: 1.6;
+}
+
+/* 2. TIPOGRAFÍA GENERAL */
+
+h2,
+h3,
+h4 {
+    font-weight: 750;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    color: #0a100d;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+h3 {
+    font-size: 25px;
+    margin-top: 35px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+p {
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+}
+
+strong {
+    font-weight: bold;
+    color: #0a100d;
+}
+

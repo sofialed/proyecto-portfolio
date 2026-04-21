@@ -4,392 +4,347 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sofia Ledesma - Mi Perfil Personal | Desarrollador Web en Formación</title>
+    <title>Sofia Ledesma - Portfolio</title>
+    <meta name="description"
+        content="Portfolio personal de Sofia Ledesma. Desarrolladora Web en formación aprendiendo HTML y CSS.">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero-container.css">
+    <link rel="stylesheet" href="css/about-me.css">
+
+    <!-- Font Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font H1 y Nav -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="brand">
-            <a href="/" aria-label="Mi Perfil Personal - Inicio">
-                <img src="/assets/icons/perfil-logo.svg" alt="Mi Perfil Personal" width="48" height="48">
-                <span>Mi Perfil Personal</span>
-            </a>
-        </div>
-
-        <nav aria-label="Navegación principal">
-            <ul>
-                <li><a href="/" aria-current="page">Inicio</a></li>
-                <li><a href="/sobre-mi.html">Sobre mí</a></li>
-                <li><a href="/habilidades.html">Habilidades</a></li>
-                <li><a href="/proyectos.html">Proyectos</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-
-        <div class="header-actions">
-            <a href="/assets/documents/cv-diego-degranda.pdf" download aria-label="Descargar CV en PDF">
-                📄 CV
-            </a>
-
-
-            <select aria-label="Seleccionar idioma">
-                <option value="es" selected>ES</option>
-                <option value="en">EN</option>
-            </select>
+    <!-- Header con navegación -->
+    <header class="header">
+        <div class="container">
+            <div class="brand">
+                <h1 class="name">sofia ledesma.</h1>
+            </div>
+            <nav class="nav">
+                <ul class="list">
+                    <li class="item">
+                        <a href="#inicio" class="nav_link nav_link-active">Inicio</a>
+                    </li>
+                    <li class="item">
+                        <a href="#sobre-mi" class="nav_link">Sobre mí</a>
+                    </li>
+                    <li class="item">
+                        <a href="#proyectos" class="nav_link">Proyectos</a>
+                    </li>
+                    <li class="item">
+                        <a href="#habilidades" class="nav_link">Habilidades</a>
+                    </li>
+                    <li class="item">
+                        <a href="#contacto" class="nav_link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+                <label for="menu-checkbox" class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/sofialedesma-" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/icons/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/sofialed" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/icons/github.png" alt="GitHub">
+                </a>
+            </div>
         </div>
     </header>
 
-    <main id="contenido-principal">
-
-        <section aria-labelledby="hero-titulo">
-            <h1 id="hero-titulo">¡Hola! Soy Sofia Ledesma</h1>
-            <p><strong>Desarrollador Web en Formación</strong></p>
-            <p>
-                Estoy aprendiendo HTML y CSS para crear sitios web hermosos
-                y funcionales. Mi pasión: transformar ideas en experiencias
-                web increíbles.
-            </p>
-
-
-            <div class="hero-actions">
-                <a href="#proyectos-destacados">Ver Mis Proyectos</a>
-                <a href="/contacto.html">Contáctame</a>
-            </div>
-
-            <div class="hero-stats">
-                <div>
-                    <data value="6">6+</data>
-                    <span>Meses aprendiendo</span>
+    <!-- Contenido principal -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="inicio">
+            <div class="hero_container">
+                <div class="hero-text">
+                    <h2 class="hero_title">¡Hola! <br>Soy Sofia Ledesma</h2>
+                    <p class="hero_subtitle">Web Developer Junior</p>
+                    <div class="hero_actions">
+                        <a href="#proyectos" class="button-proyects">Ver Mis Proyectos</a>
+                    </div>
                 </div>
-                <div>
-                    <data value="3">3+</data>
-                    <span>Proyectos completados</span>
-                </div>
-                <div>
-                    <data value="5">5+</data>
-                    <span>Tecnologías</span>
+                <div class="hero_image">
+                    <img src="assets/images/myself.png" alt="Dibujo de Sofia Ledesma">
                 </div>
             </div>
-
-            <figure>
-                <picture>
-                    <source media="(min-width: 768px)" srcset="/assets/images/perfil/diego-desktop.webp"
-                        type="image/webp">
-                    <source media="(min-width: 768px)" srcset="/assets/images/perfil/diego-desktop.jpg">
-                    <img src="/assets/images/perfil/diego-mobile.jpg"
-                        alt="Diego De Granda - Desarrollador Web en Formación" width="500" height="500" loading="eager">
-                </picture>
-                <figcaption>Diego De Granda en su espacio de trabajo</figcaption>
-            </figure>
         </section>
-
-        <section aria-labelledby="about-titulo">
-            <h2 id="about-titulo">Mi Viaje en el Desarrollo Web</h2>
-
-            <p>
-                Soy <strong>desarrollador web en formación</strong>,
-                actualmente aprendiendo HTML y CSS para crear sitios
-                web hermosos y funcionales.
-            </p>
-
-            <p>
-                Me apasiona la tecnología y el diseño. Cada día descubro
-                nuevas formas de mejorar mis habilidades y crear
-                <em>mejores experiencias web</em>.
-            </p>
-
-            <blockquote>
-                <p>
-                    "El buen diseño es obvio. El gran diseño es transparente.
-                    Mi objetivo es crear sitios web que sean ambos: bellos
-                    y funcionales."
+        <svg class="wave-divider wd-about-color" viewBox="0 0 1200 120"
+            preserveAspectRatio="none">
+            <path class="wave-divider__bottom"
+                d="M0,60 C300,0 300,120 600,60 C900,0 900,120 1200,60 L1200,120 L0,120 Z" />
+            <path class="wave-divider__top" d="M0,60 C300,0 300,120 600,60 C900,0 900,120 1200,60 L1200,0 L0,0 Z" />
+        </svg>
+        <!-- Sobre Mí -->
+        <section class="about" id="sobre-mi">
+            <div class="about_container">
+                <h2 class="about_title">Mi Viaje en el Desarrollo Web</h2>
+                <p class="about_intro">
+                    Soy <strong>web developer en formación</strong>,
+                    actualmente aprendiendo HTML, CSS y JavaScript para crear sitios
+                    web hermosos y funcionales.
                 </p>
-                <cite>— Mi filosofía de aprendizaje</cite>
-            </blockquote>
-
-            <h3>Mis Valores</h3>
-            <dl>
-                <dt>🎯 Dedicación</dt>
-                <dd>Comprometido con mi aprendizaje diario</dd>
-
-                <dt>📚 Curiosidad</dt>
-                <dd>Siempre explorando nuevas tecnologías</dd>
-
-                <dt>🤝 Comunidad</dt>
-                <dd>Aprendiendo y compartiendo con otros</dd>
-
-                <dt>💡 Creatividad</dt>
-                <dd>Buscando soluciones innovadoras</dd>
-            </dl>
-
-            <a href="/sobre-mi.html">
-                Conoce más sobre mí →
-            </a>
-        </section>
-
-        <section id="proyectos-destacados" aria-labelledby="projects-titulo">
-            <h2 id="projects-titulo">Mis Proyectos de Práctica</h2>
-            <p>
-                Cada proyecto representa mi progreso aprendiendo desarrollo web.
-                Desde páginas simples hasta este portfolio completo.
-            </p>
-
-            <article>
-                <figure>
-                    <picture>
-                        <source type="image/webp" srcset="/assets/images/proyectos/primer-sitio.webp">
-                        <img src="/assets/images/proyectos/primer-sitio.jpg"
-                            alt="Captura de mi primer sitio web con HTML y CSS" width="800" height="600" loading="lazy">
-                    </picture>
-                    <figcaption>Mi Primer Sitio Web - HTML y CSS básico</figcaption>
-                </figure>
-
-                <h3>Mi Primer Sitio Web</h3>
-                <p>
-                    Mi primer proyecto completo usando HTML y CSS. Una página
-                    simple pero bien estructurada donde apliqué los conceptos
-                    básicos aprendidos.
+                <p class="about_text">
+                    Me apasiona la tecnología y el diseño. Cada día descubro
+                    nuevas formas de mejorar mis habilidades y crear
+                    mejores experiencias web.
                 </p>
 
-                <h4>Lo que aprendí:</h4>
-                <ul>
-                    <li>🎯 Estructura semántica de HTML</li>
-                    <li>📊 Box Model y layout básico</li>
-                    <li>🎨 Estilos CSS fundamentales</li>
-                    <li>♿ Principios básicos de accesibilidad</li>
-                    <li>📱 Introducción al diseño responsivo</li>
-                </ul>
+                <blockquote class="quote">
+                    <p class="quote_text">
+                        "El buen diseño es obvio. El gran diseño es transparente.
+                        Mi objetivo es crear sitios web que sean ambos: bellos
+                        y funcionales."
+                    </p>
+                    <cite class="quote_author">— Mi filosofía de aprendizaje</cite>
+                </blockquote>
 
-                <h4>Tecnologías usadas:</h4>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                </ul>
-
-                <h4>Logros del proyecto:</h4>
-                <div>
-                    <data value="100">100%</data> HTML válido
+                <div class="values">
+                    <h3 class="values_title">Mis Valores</h3>
+                    <ul class="values_list">
+                        <li class="values_item">
+                            <span class="values_icon">🎯</span>
+                            <strong>Dedicación</strong>
+                            <span>Comprometido con mi aprendizaje diario</span>
+                        </li>
+                        <li class="values_item">
+                            <span class="values_icon">📚</span>
+                            <strong>Curiosidad</strong>
+                            <span>Siempre explorando nuevas tecnologías</span>
+                        </li>
+                        <li class="values_item">
+                            <span class="values_icon">🤝</span>
+                            <strong>Comunidad</strong>
+                            <span>Aprendiendo y compartiendo con otros</span>
+                        </li>
+                        <li class="values_item">
+                            <span class="values_icon">💡</span>
+                            <strong>Creatividad</strong>
+                            <span>Buscando soluciones innovadoras</span>
+                        </li>
+                    </ul>
                 </div>
-                <div>
-                    <data value="0">0</data> Errores de accesibilidad
-                </div>
-                <div>
-                    <data value="95">95</data> Score en Lighthouse
-                </div>
-
-                <a href="/proyectos/primer-sitio.html">
-                    Ver detalles del proyecto
-                </a>
-                <a href="https://demo.miprimer-sitio.com" target="_blank" rel="noopener">
-                    Ver demo ↗
-                </a>
-            </article>
-
-            <a href="/proyectos.html">
-                Ver todos los proyectos →
-            </a>
+            </div>
         </section>
 
-        <section aria-labelledby="skills-titulo">
-            <h2 id="skills-titulo">Mis Habilidades</h2>
-
-            <h3>Tecnologías que estoy aprendiendo</h3>
-            <ul>
-                <li>
-                    <img src="/assets/icons/html5.svg" alt="" width="40" height="40" aria-hidden="true">
-                    <span>HTML5 & Semántica</span>
-                    <progress value="75" max="100" aria-label="75% de dominio">
-                        75%
-                    </progress>
-                </li>
-                <li>
-                    <img src="/assets/icons/css3.svg" alt="" width="40" height="40" aria-hidden="true">
-                    <span>CSS3 & Diseño</span>
-                    <progress value="60" max="100" aria-label="60% de dominio">
-                        60%
-                    </progress>
-                </li>
-                <li>
-                    <img src="/assets/icons/javascript.svg" alt="" width="40" height="40" aria-hidden="true">
-                    <span>JavaScript (Comenzando)</span>
-                    <progress value="20" max="100" aria-label="20% de dominio">
-                        20%
-                    </progress>
-                </li>
-            </ul>
-        </section>
-
-        <section aria-labelledby="blog-titulo">
-            <h2 id="blog-titulo">Mi Blog de Aprendizaje</h2>
-            <p>
-                Comparto mi experiencia aprendiendo desarrollo web.
-            </p>
-
-            <article>
-                <time datetime="2025-01-15">15 Enero 2025</time>
-                <h3>
-                    <a href="/blog/mi-primer-mes.html">
-                        Mi Primer Mes Aprendiendo HTML
-                    </a>
-                </h3>
-                <p>
-                    Reflexiones sobre lo que aprendí en mi primer mes
-                    estudiando desarrollo web.
+        <!-- Proyectos -->
+        <section class="projects" id="proyectos">
+            <div class="projects_container">
+                <h2 class="projects_title">Mis Proyectos de Práctica</h2>
+                <p class="projects_description">
+                    Cada proyecto representa mi progreso aprendiendo desarrollo web.
+                    Desde páginas simples hasta este portfolio completo.
                 </p>
-                <span>📖 5 min de lectura</span>
-            </article>
 
-            <article>
-                <time datetime="2025-01-08">8 Enero 2025</time>
-                <h3>
-                    <a href="/blog/recursos-utiles.html">
-                        5 Recursos Gratuitos para Aprender HTML
-                    </a>
-                </h3>
-                <p>
-                    Los mejores recursos que encontré para estudiar
-                    desarrollo web desde cero.
+                <div class="projects_grid">
+                    <article class="project">
+                        <h3 class="project_title">Mi Primer Sitio Web</h3>
+                        <p class="project_description">
+                            Mi primer proyecto completo usando HTML y CSS. Una página
+                            simple pero bien estructurada donde apliqué los conceptos
+                            básicos aprendidos.
+                        </p>
+
+                        <h4 class="project_subtitle">Lo que aprendí:</h4>
+                        <ul class="project_learnings">
+                            <li>Estructura semántica de HTML</li>
+                            <li>Box Model y layout básico</li>
+                            <li>Estilos CSS fundamentales</li>
+                            <li>Principios básicos de accesibilidad</li>
+                            <li>Introducción al diseño responsivo</li>
+                        </ul>
+
+                        <div class="project_technologies">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                        </div>
+
+                        <div class="project_links">
+                            <a href="#" class="project_link">Ver proyecto</a>
+                            <a href="#" class="project_link">Ver código</a>
+                        </div>
+                    </article>
+
+                    <article class="project project-featured">
+                        <span class="project_badge">Destacado</span>
+                        <h3 class="project_title">Portfolio Personal</h3>
+                        <p class="project_description">
+                            Este mismo portfolio que estás viendo. Mi proyecto más
+                            completo donde aplico todo lo aprendido en HTML y CSS.
+                        </p>
+
+                        <h4 class="project_subtitle">Características:</h4>
+                        <ul class="project_learnings">
+                            <li>HTML semántico y accesible</li>
+                            <li>CSS moderno y organizado</li>
+                            <li>Diseño responsivo</li>
+                            <li>Metodología BEM</li>
+                            <li>Optimización de rendimiento</li>
+                        </ul>
+
+                        <div class="project_technologies">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">BEM</span>
+                        </div>
+
+                        <div class="project_links">
+                            <a href="#" class="project_link">Ver proyecto</a>
+                            <a href="#" class="project_link">Ver código</a>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <h3 class="project_title">Página de Blog</h3>
+                        <p class="project_description">
+                            Un blog simple donde practico la tipografía web y la
+                            organización de contenido. Enfocado en la legibilidad
+                            y la experiencia de lectura.
+                        </p>
+
+                        <h4 class="project_subtitle">Enfoque:</h4>
+                        <ul class="project_learnings">
+                            <li>Tipografía legible</li>
+                            <li>Espaciado correcto</li>
+                            <li>Jerarquía visual</li>
+                            <li>Colores accesibles</li>
+                            <li>Layout de contenido</li>
+                        </ul>
+
+                        <div class="project_technologies">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">Tipografía</span>
+                        </div>
+
+                        <div class="project_links">
+                            <a href="#" class="project_link">Ver proyecto</a>
+                            <a href="#" class="project_link">Ver código</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="skills" id="habilidades">
+            <div class="skills_container">
+                <h2 class="skills_title">Mis Habilidades</h2>
+
+                <h3 class="skills_subtitle">Tecnologías que estoy aprendiendo</h3>
+
+                <div class="skills_list">
+                    <div class="skill">
+                        <h4 class="skill_name">HTML5 & Semántica</h4>
+                        <div class="skill_bar">
+                            <div class="skill_progress skill_progress--html"></div>
+                        </div>
+                        <span class="skill_percentage">75%</span>
+                    </div>
+
+                    <div class="skill">
+                        <h4 class="skill_name">CSS3 & Diseño</h4>
+                        <div class="skill_bar">
+                            <div class="skill_progress skill_progress-css"></div>
+                        </div>
+                        <span class="skill_percentage">60%</span>
+                    </div>
+
+                    <div class="skill">
+                        <h4 class="skill_name">JavaScript (Comenzando)</h4>
+                        <div class="skill_bar">
+                            <div class="skill_progress skill_progress-js"></div>
+                        </div>
+                        <span class="skill_percentage">20%</span>
+                    </div>
+                </div>
+
+                <div class="learning">
+                    <h3 class="learning_title">Actualmente aprendiendo:</h3>
+                    <ul class="learning_list">
+                        <li class="learning_item">Flexbox y Grid Layout</li>
+                        <li class="learning_item">Animaciones CSS</li>
+                        <li class="learning_item">Diseño Responsive</li>
+                        <li class="learning_item">Accesibilidad Web</li>
+                        <li class="learning_item">Mejores prácticas</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="contact" id="contacto">
+            <div class="contact_container">
+                <h2 class="contact_title">¿Te gustaría conectar?</h2>
+                <p class="contact_description">
+                    Siempre estoy buscando aprender de otros desarrolladores,
+                    compartir experiencias y tal vez colaborar en proyectos
+                    interesantes.
                 </p>
-                <span>📖 3 min de lectura</span>
-            </article>
 
-            <a href="/blog.html">
-                Ver todos los artículos →
-            </a>
-        </section>
+                <div class="contact_methods">
+                    <div class="contact_method">
+                        <h3 class="contact_method-title">📧 Email</h3>
+                        <a href="mailto:diego@ejemplo.com" class="contact_link">
+                            diego@ejemplo.com</a>
+                    </div>
 
-        <!-- Call to Action -->
-        <section aria-labelledby="cta-titulo">
-            <h2 id="cta-titulo">¿Te gustaría conectar?</h2>
-            <p>
-                Siempre estoy buscando aprender de otros desarrolladores,
-                compartir experiencias y tal vez colaborar en proyectos
-                interesantes.
-            </p>
-
-            <div>
-                <h3>🚀 Proyectos de Práctica</h3>
-                <p>¿Tienes una idea? Colaboremos y aprendamos juntos</p>
-                <a href="/contacto.html#colaborar">Colaborar</a>
-            </div>
-
-            <div>
-                <h3>💬 Conectemos</h3>
-                <p>¿Eres principiante también? Aprendamos juntos</p>
-                <a href="/contacto.html#conectar">Conectar</a>
-            </div>
-
-            <div>
-                <h3>📚 Recursos</h3>
-                <p>Compartamos recursos y tips de aprendizaje</p>
-                <a href="/contacto.html#recursos">Compartir</a>
-            </div>
-        </section>
-
-    </main>
-
-
-    <footer role="contentinfo">
-        <section aria-labelledby="footer-about">
-            <h2 id="footer-about">Mi Perfil Personal</h2>
-            <p>
-                Portfolio personal de Diego De Granda.
-                Aprendiendo desarrollo web un día a la vez.
-            </p>
-
-            <form action="/newsletter" method="POST">
-                <label for="newsletter-email">
-                    Suscríbete a mi newsletter
-                </label>
-                <input type="email" id="newsletter-email" name="email" placeholder="tu@email.com" required
-                    aria-required="true">
-                <button type="submit">Suscribir</button>
-            </form>
-        </section>
-
-        <nav aria-label="Enlaces del footer">
-            <ul>
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/sobre-mi.html">Sobre mí</a></li>
-                <li><a href="/proyectos.html">Proyectos</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-
-        <section aria-labelledby="footer-contact">
-            <h2 id="footer-contact">Contacto</h2>
-            <address>
-                <dl>
-                    <dt>Email:</dt>
-                    <dd>
-                        <a href="mailto:diego@miperfilpersonal.com">
-                            diego@miperfilpersonal.com
-                        </a>
-                    </dd>
-
-                    <dt>LinkedIn:</dt>
-                    <dd>
-                        <a href="https://linkedin.com/in/diego-degranda-dev" target="_blank" rel="noopener">
-                            /in/diego-degranda-dev
-                        </a>
-                    </dd>
-
-                    <dt>GitHub:</dt>
-                    <dd>
-                        <a href="https://github.com/diegodegranda" target="_blank" rel="noopener">
+                    <div class="contact_method">
+                        <h3 class="contact_method-title">💻 GitHub</h3>
+                        <a href="https://github.com/diegodegranda" class="contact_link">
                             @diegodegranda
                         </a>
-                    </dd>
+                    </div>
 
-                    <dt>Ubicación:</dt>
-                    <dd>Ciudad de México, México</dd>
-                </dl>
-            </address>
+                    <div class="contact_method">
+                        <h3 class="contact_method-title">💼 LinkedIn</h3>
+                        <a href="https://linkedin.com/in/diego-degranda" class="contact_link">
+                            /in/diego-degranda
+                        </a>
+                    </div>
+                </div>
+
+                <a href="#" class="button button-primary button--large">
+                    📄 Descargar CV (PDF)
+                </a>
+            </div>
         </section>
+    </main>
 
-        <!-- Redes Sociales -->
-        <section aria-labelledby="footer-social">
-            <h2 id="footer-social">Sígueme</h2>
-            <ul>
-                <li>
-                    <a href="https://github.com/diegodegranda" target="_blank" rel="noopener"
-                        aria-label="GitHub de Diego De Granda">
-                        GitHub
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/diegodegranda_dev" target="_blank" rel="noopener"
-                        aria-label="Twitter de Diego De Granda">
-                        Twitter
-                    </a>
-                </li>
-                <li>
-                    <a href="https://linkedin.com/in/diego-degranda-dev" target="_blank" rel="noopener"
-                        aria-label="LinkedIn de Diego De Granda">
-                        LinkedIn
-                    </a>
-                </li>
-            </ul>
-
-            <!-- Descargas -->
-            <a href="/assets/documents/cv-diego-degranda.pdf" download>
-                📄 Descargar mi CV (PDF)
-            </a>
-        </section>
-
-        <div>
-            <p>&copy; 2025 Diego De Granda - Mi Perfil Personal. Todos los derechos reservados.</p>
-
-            <nav aria-label="Enlaces legales">
-                <a href="/privacidad.html">Privacidad</a>
-                <a href="/terminos.html">Términos</a>
-                <a href="/accesibilidad.html">Accesibilidad</a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer_container">
+            <nav class="footer_nav">
+                <a href="#inicio" class="footer_link">Inicio</a>
+                <a href="#sobre-mi" class="footer_link">Sobre mí</a>
+                <a href="#proyectos" class="footer_link">Proyectos</a>
+                <a href="#habilidades" class="footer_link">Habilidades</a>
+                <a href="#contacto" class="footer_link">Contacto</a>
             </nav>
 
-            <p>
-                Diseñado y desarrollado con ❤️ por Diego De Granda
+            <p class="footer_copyright">
+                © 2025 Diego De Granda - Portfolio Personal
+            </p>
+
+            <p class="footer_credits">
+                Diseñado y desarrollado con ❤️ mientras aprendo HTML y CSS
             </p>
         </div>
     </footer>

@@ -1,0 +1,230 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 40px;
+    width: 100%;
+}
+
+.header {
+    background-color: black;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin: 0;
+}
+
+/* 4. TITLE/TAGLINE */
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header h1 {
+    font-family: "Figtree", "Montserrat", Arial, sans-serif;
+    color: white;
+    font-size: 1.7rem;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* 5. NAV */
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 0;
+    align-items: center;
+}
+
+a {
+    font-family: "Figtree", "Montserrat", Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+}
+
+.nav_link {
+    padding: 10px 5px;
+    color: white;
+    border: none;
+    background: transparent;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav_link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.nav_link:hover::after {
+    width: 100%;
+}
+
+.nav_link-active {
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 10px 5px;
+    box-shadow: none;
+}
+
+.nav_link-active::after {
+    width: 100%;
+}
+
+/* 6. SOCIAL ICONS */
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 12px;
+}
+
+.social-icons img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease;
+    margin-right: 5px;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+/* 7. HEADER MEDIA QUERIES */
+
+/* 7.1 MENU HAMBURGUESA */
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+    height: 3px;
+    background: white;
+    border-radius: 999px;
+    transition: all 0.3s ease;
+}
+
+.menu-checkbox {
+    display: none;
+}
+
+.menu-checkbox:checked~.menu-icon span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.menu-checkbox:checked~.menu-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-checkbox:checked~.menu-icon span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+
+/* 7.2 MEDIA QUERY PARA MÓVIL */
+
+@media (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 0 20px;
+    }
+
+    .brand {
+        order: 1;
+        width: 100%;
+        flex: 0 0 auto;
+    }
+
+    .menu-toggle {
+        display: block;
+        order: 2;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .nav {
+        order: 3;
+        width: 100%;
+        display: none;
+        margin-top: 16px;
+    }
+
+    .menu-checkbox:checked~.nav {
+        display: flex;
+    }
+
+    .list {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .nav_link {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav_link::after {
+        display: none;
+    }
+
+    .nav_link-active::after {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero_container {
+        padding: 30px 20px;
+    }
+
+    .hero_title {
+        font-size: 1.8rem;
+    }
+
+    .hero_subtitle {
+        font-size: 1rem;
+    }
+
+    .button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}
