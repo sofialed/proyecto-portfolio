@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/hero-container.css">
     <link rel="stylesheet" href="css/about-me.css">
+    <link rel="stylesheet" href="css/projects.css">
 
     <!-- Font Body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,8 +87,7 @@
                 </div>
             </div>
         </section>
-        <svg class="wave-divider wd-about-color" viewBox="0 0 1200 120"
-            preserveAspectRatio="none">
+        <svg class="wave-divider wd-about-color" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path class="wave-divider__bottom"
                 d="M0,60 C300,0 300,120 600,60 C900,0 900,120 1200,60 L1200,120 L0,120 Z" />
             <path class="wave-divider__top" d="M0,60 C300,0 300,120 600,60 C900,0 900,120 1200,60 L1200,0 L0,0 Z" />
@@ -120,30 +120,43 @@
                     <h3 class="values_title">Mis Valores</h3>
                     <ul class="values_list">
                         <li class="values_item">
-                            <span class="values_icon">🎯</span>
-                            <strong>Dedicación</strong>
-                            <span>Comprometido con mi aprendizaje diario</span>
+                            <div class="specific-value">
+                                <span class="values_icon"><img src="assets/icons/dedication.png"
+                                        alt="Dedicación"></span>
+                                <strong>Dedicación</strong>
+                                <span>Comprometido con mi aprendizaje diario</span>
+                            </div>
                         </li>
                         <li class="values_item">
-                            <span class="values_icon">📚</span>
-                            <strong>Curiosidad</strong>
-                            <span>Siempre explorando nuevas tecnologías</span>
+                            <div class="specific-value">
+                                <span class="values_icon"><img src="assets/icons/curiosity.png" alt="Curiosidad"></span>
+                                <strong>Curiosidad</strong>
+                                <span>Siempre explorando nuevas tecnologías</span>
+                            </div>
                         </li>
                         <li class="values_item">
-                            <span class="values_icon">🤝</span>
-                            <strong>Comunidad</strong>
-                            <span>Aprendiendo y compartiendo con otros</span>
+                            <div class="specific-value">
+                                <span class="values_icon"><img src="assets/icons/community.png" alt="Comunidad"></span>
+                                <strong>Comunidad</strong>
+                                <span>Aprendiendo y compartiendo con otros</span>
+                            </div>
                         </li>
                         <li class="values_item">
-                            <span class="values_icon">💡</span>
-                            <strong>Creatividad</strong>
-                            <span>Buscando soluciones innovadoras</span>
+                            <div class="specific-value">
+                                <span class="values_icon"><img src="assets/icons/creativity.png" alt="Creatividad"></span>
+                                <strong>Creatividad</strong>
+                                <span>Buscando soluciones innovadoras</span>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
-
+                <svg class="wave-divider-projects wd-about-color" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path class="wave-divider__bottom_projects"
+                d="M0,60 C300,0 300,120 600,60 C900,0 900,120 1200,60 L1200,120 L0,120 Z" />
+            <path class="wave-divider__top_projects" d="M0,60 C300,0 300,120 600,60 C900,0 900,120 1200,60 L1200,0 L0,0 Z" />
+        </svg>
         <!-- Proyectos -->
         <section class="projects" id="proyectos">
             <div class="projects_container">
@@ -154,31 +167,33 @@
                 </p>
 
                 <div class="projects_grid">
-                    <article class="project">
-                        <h3 class="project_title">Mi Primer Sitio Web</h3>
-                        <p class="project_description">
-                            Mi primer proyecto completo usando HTML y CSS. Una página
-                            simple pero bien estructurada donde apliqué los conceptos
-                            básicos aprendidos.
-                        </p>
-
-                        <h4 class="project_subtitle">Lo que aprendí:</h4>
-                        <ul class="project_learnings">
-                            <li>Estructura semántica de HTML</li>
-                            <li>Box Model y layout básico</li>
-                            <li>Estilos CSS fundamentales</li>
-                            <li>Principios básicos de accesibilidad</li>
-                            <li>Introducción al diseño responsivo</li>
-                        </ul>
-
-                        <div class="project_technologies">
-                            <span class="tag">HTML5</span>
-                            <span class="tag">CSS3</span>
-                        </div>
-
-                        <div class="project_links">
-                            <a href="#" class="project_link">Ver proyecto</a>
-                            <a href="#" class="project_link">Ver código</a>
+                    <article class="project project--horizontal">
+                        <a href="https://sofialed.github.io/tjklune/" class="project_screenshot-link" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/images/screenshot-web.png" alt="Captura del sitio TJ Klune" class="project_screenshot">
+                        </a>
+                        <div class="project_bottom">
+                            <div class="project_box">
+                                <h3 class="project_title">Mi Primer Sitio Web</h3>
+                                <p class="project_description">
+                                    Mi primer proyecto completo usando HTML y CSS. Una página
+                                    simple pero bien estructurada donde apliqué los conceptos
+                                    básicos aprendidos.
+                                </p>
+                            </div>
+                            <div class="project_box">
+                                <h4 class="project_subtitle">Lo que aprendí:</h4>
+                                <ul class="project_learnings">
+                                    <li>Estructura semántica de HTML</li>
+                                    <li>Box Model y layout básico</li>
+                                    <li>Estilos CSS fundamentales</li>
+                                    <li>Principios básicos de accesibilidad</li>
+                                    <li>Introducción al diseño responsivo</li>
+                                </ul>
+                                <div class="project_links">
+                                    <a href="https://sofialed.github.io/tjklune/" class="project_link" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+                                    <a href="#" class="project_link">Ver código</a>
+                                </div>
+                            </div>
                         </div>
                     </article>
 
@@ -211,34 +226,6 @@
                         </div>
                     </article>
 
-                    <article class="project">
-                        <h3 class="project_title">Página de Blog</h3>
-                        <p class="project_description">
-                            Un blog simple donde practico la tipografía web y la
-                            organización de contenido. Enfocado en la legibilidad
-                            y la experiencia de lectura.
-                        </p>
-
-                        <h4 class="project_subtitle">Enfoque:</h4>
-                        <ul class="project_learnings">
-                            <li>Tipografía legible</li>
-                            <li>Espaciado correcto</li>
-                            <li>Jerarquía visual</li>
-                            <li>Colores accesibles</li>
-                            <li>Layout de contenido</li>
-                        </ul>
-
-                        <div class="project_technologies">
-                            <span class="tag">HTML5</span>
-                            <span class="tag">CSS3</span>
-                            <span class="tag">Tipografía</span>
-                        </div>
-
-                        <div class="project_links">
-                            <a href="#" class="project_link">Ver proyecto</a>
-                            <a href="#" class="project_link">Ver código</a>
-                        </div>
-                    </article>
                 </div>
             </div>
         </section>

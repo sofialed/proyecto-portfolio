@@ -30,31 +30,31 @@ h4 {
     font-weight: 750;
     line-height: 1.4;
     margin-bottom: 16px;
-    color: #0a100d;
-}
-
-h1 {
-    font-size: 45px;
+    color: white;
 }
 
 h2 {
     font-size: 30px;
     margin-top: 50px;
+    color: white;
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 30px;
     margin-top: 35px;
+    color: white;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 25px;
+    color: white;
 }
 
 p {
     margin-bottom: 16px;
     font-size: 1.2rem;
+    color: #0a100d;
 }
 
 strong {

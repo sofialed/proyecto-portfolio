@@ -51,7 +51,7 @@ h2.hero_title {
     transition: all 0.3s ease;
     background: #FF8118;
     color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.85);
 }
 
 .button-proyects:hover {
@@ -67,7 +67,7 @@ h2.hero_title {
     background: transparent;
 }
 
-/* 9. WAVE DIVIDER */
+/* WAVE DIVIDER HEADER */
 
 .about {
     background-color: #F7CB46;
