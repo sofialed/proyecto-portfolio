@@ -28,7 +28,7 @@
 header h1 {
     font-family: "Figtree", "Montserrat", Arial, sans-serif;
     color: white;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     padding: 10px;
     margin: 5px;
 }
@@ -48,14 +48,6 @@ header h1 {
     gap: 30px;
     margin: 0;
     align-items: center;
-}
-
-a {
-    font-family: "Figtree", "Montserrat", Helvetica, sans-serif;
-    text-decoration: none;
-    font-weight: 600;
-    font-style: normal;
-    color: white;
 }
 
 .nav_link {

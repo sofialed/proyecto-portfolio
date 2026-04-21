@@ -1,0 +1,155 @@
+.wave-divider-skills {
+    display: block;
+    width: 100%;
+    height: 120px;
+    margin: -1px 0;
+}
+
+.wave-divider__top_skills {
+    fill: #FF8118;
+}
+
+.wave-divider__bottom_skills {
+    fill: #F7CB46;
+}
+
+.skills {
+    background-color: #F7CB46;
+    padding: 40px 30px;
+}
+
+.skills_container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.skills_title {
+    font-family: "Montserrat", Arial, sans-serif;
+    margin-bottom: 8px;
+    margin-top: 30px;
+}
+
+.skills_subtitle {
+    align-self: flex-start;
+    margin: 10px 0;
+    padding: 0 15px;
+}
+
+/* Barras de habilidades */
+
+.skills_list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px 0;
+}
+
+.skill-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.skill-label {
+    width: 120px;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #0a100d;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.skill-track {
+    flex: 1;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    position: relative;
+    height: 100%;
+    width: 0%;
+    border-radius: 20px;
+    overflow: hidden;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.7s;
+}
+
+.skill-fill--html {
+    background: #FF8118;
+    animation-name: fillHtml;
+}
+
+.skill-fill--css {
+    background: #F299EC;
+    animation-name: fillCss;
+}
+
+.skill-fill--js {
+    background: #FEF6E1;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    animation-name: fillJs;
+}
+
+@keyframes fillHtml {
+    to {
+        width: 75%;
+    }
+}
+
+@keyframes fillCss {
+    to {
+        width: 60%;
+    }
+}
+
+@keyframes fillJs {
+    to {
+        width: 20%;
+    }
+}
+
+.skill-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.25) 40%,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(255, 255, 255, 0.25) 60%,
+        transparent 100%
+    );
+    transform: skewX(-15deg);
+    animation: shimmer 5.5s ease infinite;
+    animation-delay: 4.2s;
+}
+
+@keyframes shimmer {
+    0%   { left: -40%; opacity: 1; }
+    70%  { left: 110%; opacity: 0.2; }
+    100% { left: 110%; opacity: 0; }
+}
+
+.skill-percent {
+    width: 44px;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #0a100d;
+    flex-shrink: 0;
+}
