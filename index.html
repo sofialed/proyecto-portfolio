@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/about-me.css">
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/abilities.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <!-- Font Body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -279,41 +281,78 @@
             </div>
         </section>
 
+        <svg class="wave-divider-contact wd-contact-color" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path class="wave-divider__bottom_contact"
+                d="M0,60 C300,0 300,120 600,60 C900,0 900,120 1200,60 L1200,120 L0,120 Z" />
+            <path class="wave-divider__top_contact"
+                d="M0,60 C300,0 300,120 600,60 C900,0 900,120 1200,60 L1200,0 L0,0 Z" />
+        </svg>
+
         <!-- Contacto -->
         <section class="contact" id="contacto">
             <div class="contact_container">
-                <h2 class="contact_title">¿Te gustaría conectar?</h2>
-                <p class="contact_description">
-                    Siempre estoy buscando aprender de otros desarrolladores,
-                    compartir experiencias y tal vez colaborar en proyectos
-                    interesantes.
-                </p>
 
-                <div class="contact_methods">
-                    <div class="contact_method">
-                        <h3 class="contact_method-title">📧 Email</h3>
-                        <a href="mailto:diego@ejemplo.com" class="contact_link">
-                            diego@ejemplo.com</a>
-                    </div>
-
-                    <div class="contact_method">
-                        <h3 class="contact_method-title">💻 GitHub</h3>
-                        <a href="https://github.com/diegodegranda" class="contact_link">
-                            @diegodegranda
-                        </a>
-                    </div>
-
-                    <div class="contact_method">
-                        <h3 class="contact_method-title">💼 LinkedIn</h3>
-                        <a href="https://linkedin.com/in/diego-degranda" class="contact_link">
-                            /in/diego-degranda
-                        </a>
-                    </div>
+                <div class="contact_header">
+                    <h2 class="contact_title">¿Te gustaría conectar?</h2>
+                    <p class="contact_description">
+                        Siempre estoy buscando aprender de otros desarrolladores,
+                        compartir experiencias y tal vez colaborar en proyectos
+                        interesantes.
+                    </p>
                 </div>
 
-                <a href="#" class="button button-primary button--large">
-                    📄 Descargar CV (PDF)
-                </a>
+                <div class="contact_body">
+                    <!-- Columna izquierda: medios de contacto -->
+                    <div class="contact_methods">
+                        <a href="mailto:sledesma.dv@gmail.com" class="contact_method">
+                            <div class="contact_method-icon">
+                                <img src="assets/icons/email.png" alt="Email">
+                            </div>
+                            <div class="contact_method-text">
+                                <span class="contact_method-label">Email:</span>
+                                <span class="contact_method-value">sledesma.dv@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/sofialed" target="_blank" rel="noopener noreferrer" class="contact_method">
+                            <div class="contact_method-icon">
+                                <img src="assets/icons/github.png" alt="GitHub">
+                            </div>
+                            <div class="contact_method-text">
+                                <span class="contact_method-label">GitHub:</span>
+                                <span class="contact_method-value">@sofialed</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/sofialedesma-" target="_blank" rel="noopener noreferrer" class="contact_method">
+                            <div class="contact_method-icon">
+                                <img src="assets/icons/linkedin.png" alt="LinkedIn">
+                            </div>
+                            <div class="contact_method-text">
+                                <span class="contact_method-label">LinkedIn:</span>
+                                <span class="contact_method-value">/in/sofialedesma-</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Columna derecha: formulario -->
+                    <form class="contact_form" action="#" method="post">
+                        <div class="form_group">
+                            <label for="contact-name" class="form_label">Tu nombre:</label>
+                            <input type="text" id="contact-name" name="name" class="form_input" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form_group">
+                            <label for="contact-email" class="form_label">Tu email:</label>
+                            <input type="email" id="contact-email" name="email" class="form_input" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form_group">
+                            <label for="contact-message" class="form_label">Tu mensaje:</label>
+                            <textarea id="contact-message" name="message" class="form_textarea" placeholder="Tu mensaje..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="form_submit">Enviar</button>
+                    </form>
+                </div>
+
             </div>
         </section>
     </main>
@@ -330,11 +369,11 @@
             </nav>
 
             <p class="footer_copyright">
-                © 2025 Diego De Granda - Portfolio Personal
+                © 2026 Sofia Ledesma - Portfolio Personal
             </p>
 
             <p class="footer_credits">
-                Diseñado y desarrollado con ❤️ mientras aprendo HTML y CSS
+                Diseñado y desarrollado con ❤️ mientras aprendo HTML, CSS y Javascript.
             </p>
         </div>
     </footer>

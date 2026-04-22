@@ -1,0 +1,162 @@
+.wave-divider-contact {
+    display: block;
+    width: 100%;
+    height: 120px;
+    margin: -1px 0;
+}
+
+.wave-divider__top_contact {
+    fill: #F7CB46;
+}
+
+.wave-divider__bottom_contact {
+    fill: #F299EC;
+}
+
+.contact {
+    background-color: #F299EC;
+    padding: 30px 20px;
+}
+
+/* Layout */
+.contact_container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.contact_header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact_body {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+/* Cada método de contacto: ícono + texto en fila */
+.contact_methods {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 40px;
+    padding: 10px;
+}
+
+.contact_method {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #0a100d;
+}
+
+.contact_method-icon img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.contact_method-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_method-label {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #6D6875;
+}
+
+.contact_method-value {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+}
+
+/* Formulario en recuadro */
+.contact_form {
+    flex: 1;
+    background-color: #FEF6E1;
+    border: 2px solid #0a100d;
+    border-radius: 8px;
+    padding: 32px;
+    box-shadow: 4px 4px 0px rgba(0,0,0,0.85);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.contact_form-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #0a100d;
+    margin: 0;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form_label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: #6D6875;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.form_input,
+.form_textarea {
+    font-family: 'Figtree', sans-serif;
+    font-size: 0.70rem;
+    color: #6a6c6b;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #0a100d;
+    padding: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form_input:focus,
+.form_textarea:focus {
+    border-bottom-color: #FF8118;
+}
+
+.form_textarea {
+    resize: none;
+    min-height: 80px;
+}
+
+button {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    border: 2px solid #0a100d;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #FF8118;
+    color: white;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.85);
+}
+
+button:hover {
+    background: #d64835;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
