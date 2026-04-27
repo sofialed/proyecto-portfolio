@@ -153,3 +153,40 @@
     color: #0a100d;
     flex-shrink: 0;
 }
+
+.learning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablet: ≤ 1024px */
+@media (max-width: 1024px) {
+    .skills {
+        padding: 30px 20px;
+    }
+}
+
+/* Móvil: ≤ 900px */
+@media (max-width: 900px) {
+    .skills {
+        padding: 20px 16px;
+    }
+
+    .skill-label {
+        width: 90px;
+        font-size: 0.85rem;
+    }
+
+    .skill-track {
+        height: 30px;
+    }
+
+    .skill-percent {
+        font-size: 0.8rem;
+    }
+}

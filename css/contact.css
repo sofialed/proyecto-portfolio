@@ -160,3 +160,35 @@ button:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+/* MEDIA QUERIES */
+
+/* Tablet: ≤ 1024px */
+@media (max-width: 1024px) {
+    .contact_body {
+        gap: 30px;
+    }
+
+    .contact_methods {
+        margin: 20px;
+    }
+}
+
+/* Móvil: ≤ 900px */
+@media (max-width: 900px) {
+    .contact_body {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .contact_methods {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .contact_form {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+}
